@@ -83,8 +83,8 @@ function secondHalfOfArrayIfItIsEven(fruits) {
  * - Use string method .endsWith()
  */
 function youGottaCalmDown(shout) {
-  while(shout.slice(0,shout.length-1).endsWith("!"))
-    shout = shout.slice(0, shout.length-1);
+  while(shout.slice(0,-2).endsWith("!"))
+    shout = shout.slice(0, -2);
   
   return shout;
 }
